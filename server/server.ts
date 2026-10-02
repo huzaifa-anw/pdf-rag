@@ -7,7 +7,7 @@ const app = express();
 
 app.get('/', (req: Request, res: Response) => {
 
-    const response = new ApiResponse(true, 200, 'api cal successful', {})
+    const response = new ApiResponse(true, 200, 'api call successful', {})
     res.status(response.statusCode).json(response)
     
 })
@@ -15,5 +15,5 @@ app.get('/', (req: Request, res: Response) => {
 const port = Number(process.env.PORT) || 5000;
 
 app.listen(port, () => {
-    console.log(`Server is runnning on port: ${port}`);
+    console.log(`Server is runnning on port: ${port} \n http://localhost:${port}`);
 })
