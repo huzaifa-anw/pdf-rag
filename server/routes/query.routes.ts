@@ -3,6 +3,6 @@ import createQuery from "../controllers/query.controller.js";
 
 const queryRouter = Router();
 
-queryRouter.get('/', createQuery);
+queryRouter.post('/', createQuery);
 
 export default queryRouter;

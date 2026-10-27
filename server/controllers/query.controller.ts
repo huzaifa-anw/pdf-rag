@@ -8,7 +8,7 @@ const createQuery = asyncHandler(async (req: Request, res: Response) => {
     }
 	const { query }: reqBodyType = req.body;
 
-    if (query.length < 3 || query.length > 50) {
+    if (query.length < 3 || query.length > 500) {
         throw new ApiError('Query length should be 3-500 charcters', 401, 'INVALID_QUERY_SIZE');
     }
 

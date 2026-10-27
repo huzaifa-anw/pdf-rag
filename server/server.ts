@@ -8,6 +8,8 @@ import 'dotenv/config'
 
 const app = express();
 
+app.use(express.json({ limit: '1mb' }));
+
 app.use('/query', queryRouter);
 app.use('/upload', uploadRouter);
 

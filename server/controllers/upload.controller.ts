@@ -3,8 +3,8 @@ import asyncHandler from "express-async-handler";
 
 const uploadController = asyncHandler(async () => {
 	throw new ApiError(
-		501,
 		"File upload is not implemented yet",
+		501,
 		"UPLOAD_NOT_IMPLEMENTED",
 	);
 });
